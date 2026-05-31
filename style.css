@@ -449,13 +449,13 @@ nav.scrolled .logo-img {
     margin: 12px 0;
   }
 
-  /* Links de CTA (Assine e Agendar) — mesmo estilo "fantasma" do desktop */
+  /* Links de CTA (Assine e Agendar) — fundo vermelho da marca */
   .mobile-link-cta {
     display: inline-block;
     width: auto;
-    background: transparent !important;
-    color: var(--white) !important;
-    border: 1px solid var(--white) !important;
+    background: #B73736 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #B73736 !important;
     border-radius: 6px !important;
     padding: 12px 26px !important;
     margin-top: 12px;
@@ -469,9 +469,9 @@ nav.scrolled .logo-img {
   }
 
   .mobile-link-cta:hover {
-    background: linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%) !important;
-    color: #0E1E2C !important;
-    border-color: #ffffff !important;
+    background: #9E2F2F !important;
+    color: #FFFFFF !important;
+    border-color: #9E2F2F !important;
   }
 
   /* Redes sociais no menu lateral mobile (abaixo dos botões) */
@@ -2861,6 +2861,7 @@ section, footer {
 
   /* Hero mobile */
   .hero {
+    height: 100svh;          /* altura visível real (evita esconder o "Rolar" atrás da barra do navegador) */
     min-height: 100svh;
     padding-bottom: 60px;
     /* Garante que o hero mantém flex mesmo com o override de section abaixo */
@@ -2901,20 +2902,30 @@ section, footer {
     line-height: 1.7;
   }
 
-  /* INDEX: hero no canto superior esquerdo no mobile */
+  /* INDEX: hero centralizado no mobile */
   .home .hero {
-    align-items: flex-start !important;   /* topo */
-    justify-content: flex-start;          /* esquerda */
+    align-items: center !important;       /* centraliza verticalmente */
+    justify-content: center;              /* centraliza horizontalmente */
   }
   .home .hero-content {
-    text-align: left;
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 6%;                        /* sem deslocamento — fica no centro */
+    transform: none;                      /* remove o translateY(8vh) do desktop */
   }
   .home .hero-eyebrow,
   .home .hero-title,
   .home .hero-title em,
   .home .hero-sub {
-    text-align: left;
+    text-align: center;
+  }
+  /* Subtítulo centralizado e com largura controlada */
+  .home .hero-sub { margin-left: auto; margin-right: auto; max-width: 420px; }
+
+  /* "Rolar" sempre visível, acima da barra do navegador */
+  .hero-scroll {
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    opacity: 1;
   }
 
   /* Botões centralizados no mobile */
@@ -3359,6 +3370,20 @@ body:not(.home) .carousel-btn {
   color: #FFFFFF !important;
 }
 
+/* Botão vermelho reutilizável (#B73736 + texto branco) */
+.btn-red {
+  background: #B73736 !important;
+  color: #FFFFFF !important;
+  border-color: #B73736 !important;
+}
+.btn-red:hover {
+  background: #9E2F2F !important;
+  color: #FFFFFF !important;
+}
+
+/* (2) Bloco 5 — cards de depoimentos com o fundo da navbar */
+.home #depoimentos .testimonial-card { background: #0E1E2C; }
+
 /* (1,3,8,9) Títulos dos blocos 2,3,5,6 — fonte Young Heart, mesmo tamanho */
 .home #clube .section-title,
 .home #servicos .section-title,
@@ -3488,12 +3513,32 @@ body:not(.home) .carousel-btn {
   letter-spacing: 2px;
   margin: 0 0 6px;
 }
+.home .location-unit-contact {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;   /* (4) as duas linhas alinhadas entre si */
+  gap: 10px;
+  margin: 4px auto 0;        /* bloco centralizado no card */
+  text-align: left;
+}
 .home .location-unit-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 300;
   color: var(--gray-light);
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.home a.location-unit-info:hover { color: #FFFFFF; }
+.home .location-unit-ic {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #B73736;            /* ícones no vermelho da marca */
 }
 .home .location-unit-btn {
   width: 100%;
