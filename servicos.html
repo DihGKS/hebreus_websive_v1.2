@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços | Barbearia Hebreus — Pinhais/PR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="img_hebreus/LOGO COLOR 1.png" alt="Logo Barbearia Hebreus" class="logo-img">
+  </a>
+
+<!--Menu Suspenso-->  
+  <ul class="nav-links">
+    <li id="navServicos">
+      <a href="#servicos" id="servicosToggle"><span class="menu-bars"></span>Menu <span class="nav-arrow"></span></a>
+      <div class="nav-dropdown" id="servicosDropdown">
+        <a href="servicos.html">Serviços</a>
+        <a href="hebreus_vip.html">Hebreus VIP</a>
+        <a href="sobre_nos.html">Sobre Nós</a>
+        <a href="trabalhe_conosco.html">Trabalhe Conosco</a>
+      </div>
+    </li>
+
+    <li><a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20assinar%20o%20clube%20Hebreus%20VIP!" target="_blank" class="nav-cta">Assine o Clube</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20na%20Barbearia!" target="_blank" class="nav-cta">Agendar como visitante</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span class="menu-bars"></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="servicos.html" class="mobile-link">Serviços</a>
+  <a href="hebreus_vip.html" class="mobile-link">Hebreus VIP</a>
+  <a href="sobre_nos.html" class="mobile-link">Sobre Nós</a>
+  <a href="trabalhe_conosco.html" class="mobile-link">Trabalhe Conosco</a>
+  <div class="mobile-menu-divider"></div>
+  <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20assinar%20o%20clube%20Hebreus%20VIP!" class="mobile-link mobile-link-cta">Assine o Clube</a>
+  <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20na%20Barbearia!" target="_blank" class="mobile-link mobile-link-cta">Agendar como visitante</a>
+    <div class="mobile-social">
+      <a href="https://www.facebook.com/Barbeariahebreusoficial" target="_blank" class="mobile-social-link" aria-label="Facebook">
+        <img src="img_hebreus/icon_facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/barbeariahebreus_/" target="_blank" class="mobile-social-link" aria-label="Instagram">
+        <img src="img_hebreus/icon_instagram.png" alt="Instagram">
+      </a>
+    </div>
+</div>
+
+<section class="hero">
+  <div class="servicos-hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Nossos Serviços</p>
+    <h1 class="hero-title">
+      Excelência em cada<br>
+      <em>Detalhe.</em>
+    </h1>
+    <p class="hero-sub">Na Barbearia Hebreus, transformamos o cuidado masculino em uma experiência de alto nível. Conheça nossos serviços e descubra o padrão que você merece.</p>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Rolar</span>
+  </div>
+</section>
+
+<!-- SEÇÃO PRINCIPAL DE SERVIÇOS -->
+<section class="servicos-section">
+  
+  <!-- IMPORTANTE: A classe 'reveal' foi removida do container de filtros -->
+  <div class="filtros-container">
+    <button class="btn-filtro active" data-filter="popular">Mais populares</button>
+    <button class="btn-filtro" data-filter="cabelo">Cabelo</button>
+    <button class="btn-filtro" data-filter="barba">Barba</button>
+    <button class="btn-filtro" data-filter="estetica">Estética e Visagismo</button>
+    <button class="btn-filtro" data-filter="tratamentos">Tratamentos</button>
+  </div>
+
+  <!-- A SUA LISTA DE SERVIÇOS ATUALIZADA AQUI -->
+  <div class="servicos-lista">
+
+    <div class="servico-card reveal popular cabelo">
+      <div class="servico-img"><img src="img_hebreus/Corte premium.jpg" alt="Corte"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Corte Masculino</h3>
+          <p class="servico-desc">Corte clássico ou moderno executado com precisão, focado no seu visagismo e estilo.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20cortar%20o%20Cabelo%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20cortar%20o%20Cabelo!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal popular barba">
+      <div class="servico-img"><img src="img_hebreus/Barba premium.jpg" alt="Barba"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Barba & Navalha</h3>
+          <p class="servico-desc">Ritual completo com toalha quente, navalha e produtos premium para um barbear perfeito.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Barba%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Barba!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal popular estetica">
+      <div class="servico-img"><img src="img_hebreus/Sobrancelha.jpg" alt="Sobrancelha"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Sobrancelha na Navalha</h3>
+          <p class="servico-desc">Alinhamento preciso e limpeza do olhar utilizando navalha tradicional.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Sobrancelha(Navalha)%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Sobrancelha(Navalha)!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal popular tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Cadeira_barbearia.jpg" alt="Hidratação de Barba"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Hidratação de Barba</h3>
+          <p class="servico-desc">Tratamento intensivo para fios macios, sedosos e pele saudável sob a barba.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Hidratação%20de%20Barba%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Hidratação%20de%20Barba!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal cabelo barba">
+      <div class="servico-img"><img src="img_hebreus/andrea-donato-MNu0n-3BIKs-unsplash.jpg" alt="Acabamento"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Acabamento</h3>
+          <p class="servico-desc">Limpeza de contornos de cabelo ou barba para manter o visual em dia entre as visitas.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20o%20Acabamento%20do%20Cabelo%20e%20Barba%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20o%20Acabamento%20do%20Cabelo%20e%20Barba!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal cabelo barba">
+      <div class="servico-img"><img src="img_hebreus/Corte premium.jpg" alt="Raspar à máquina"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Raspar à Máquina</h3>
+          <p class="servico-desc">Corte prático e uniforme em toda a cabeça ou barba utilizando apenas a máquina de corte.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Raspar%20o%20Cabelo%20e/ou%20Barba%20na%20Máquina%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Raspar%20o%20Cabelo%20e/ou%20Barba%20na%20Máquina!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal estetica">
+      <div class="servico-img"><img src="img_hebreus/Sobrancelha.jpg" alt="Sobrancelha Cera"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Sobrancelha na Cera</h3>
+          <p class="servico-desc">Remoção de pelos excessivos com cera quente para maior durabilidade e limpeza do desenho.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Sobrancelha(Cera)%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20a%20Sobrancelha(Cera)!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal estetica">
+      <div class="servico-img"><img src="img_hebreus/Barb_Hebreus_Unidade.jpg" alt="Depilação Orelha"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Depilação de Orelha</h3>
+          <p class="servico-desc">Higiene e cuidado com a remoção rápida de pelos indesejados nas orelhas utilizando cera.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Depilar%20a%20Orelha%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Depilar%20a%20Orelha!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal estetica">
+      <div class="servico-img"><img src="img_hebreus/Barb_Hebreus_Unidade.jpg" alt="Depilação Nariz"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Depilação de Nariz</h3>
+          <p class="servico-desc">Procedimento seguro para limpeza estética dos pelos aparentes na região nasal.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Depilar%20o%20Nariz%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20Depilar%20o%20Nariz!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Cadeira_barbearia.jpg" alt="Limpeza de Pele"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Limpeza de Pele</h3>
+          <p class="servico-desc">Remoção de cravos e impurezas com produtos específicos para renovação celular do rosto.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Limpeza%20de%20Pele%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Limpeza%20de%20Pele!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Corte premium.jpg" alt="Hidratação Capilar"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Hidratação Capilar</h3>
+          <p class="servico-desc">Tratamento de alto impacto para fios ressecados, devolvendo brilho e força ao cabelo.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Hidratação%20Capilar%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Hidratação%20Capilar!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Corte premium.jpg" alt="Camuflagem de Cabelo"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Camuflagem Capilar</h3>
+          <p class="servico-desc">Procedimento sutil para escurecer fios brancos, mantendo a naturalidade sem aspecto tingido.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Camuflagem%20Capilar%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Camuflagem%20Capilar!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Barba premium.jpg" alt="Camuflagem de Barba"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Camuflagem de Barba</h3>
+          <p class="servico-desc">Cobertura de fios brancos ou pequenas falhas para proporcionar um volume visual na barba.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Camuflagem%20de%20Barba%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Camuflagem%20de%20Barba!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Corte premium.jpg" alt="Desondulação"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Desondulação Capilar</h3>
+          <p class="servico-desc">Redução química de volume para facilitar o penteado e domar cabelos difíceis no dia a dia.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Desondulação%20Capilar%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20fazer%20uma%20Desondulação%20Capilar!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="servico-card reveal tratamentos">
+      <div class="servico-img"><img src="img_hebreus/Barb_Hebreus_Unidade.jpg" alt="Cone Hindu"></div>
+      <div class="servico-content">
+        <div class="servico-textos">
+          <h3 class="servico-nome">Cone Hindu</h3>
+          <p class="servico-desc">Terapia não invasiva focada na limpeza dos canais auditivos e no relaxamento da mente.</p>
+        </div>
+        <div class="servico-btns">
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20realizar%20uma%20limpeza%20auditiva%20com%20Cone%20Hindu%20pelo%20Clube!" target="_blank" class="btn-primary">Agendar pelo Clube</a>
+          <a href="https://api.whatsapp.com/send?phone=5541992147974&text=Olá%2C%20quero%20agendar%20um%20horário%20para%20realizar%20uma%20limpeza%20auditiva%20com%20Cone%20Hindu!" target="_blank" class="btn-outline">Agendar como Visitante</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDE 6: FOOTER (Enxuto) -->
+<footer style="padding: 60px 8% 40px; display: flex; flex-direction: column; justify-content: center;">
+  <div class="footer-grid" style="margin-bottom: 40px; gap: 40px;">
+    <!-- Logo -->
+    <div>
+      <img src="img_hebreus/LOGO P & B 1.png" alt="Logo Barbearia Hebreus" class="footer-logo">
+      <p class="footer-tagline">A primeira barbearia por assinatura em Pinhais/PR. Sua imagem, nossa missão — sempre impecável.</p>
+    </div>
+    
+    <!-- Coluna 1: Institucional -->
+    <div>
+      <div class="footer-col-title">Institucional</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre_nos.html">Sobre Nós</a></li>
+        <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+      </ul>
+    </div>
+    
+    <!-- Coluna 2: Serviços -->
+    <div>
+      <div class="footer-col-title">Serviços</div>
+      <ul class="footer-links">
+        <li><a href="hebreus_vip.html">Clube Hebreus VIP</a></li>
+        <li><a href="servicos.html">Cabelo</a></li>
+        <li><a href="servicos.html">Barba</a></li>
+      </ul>
+    </div>
+    
+    <!-- Coluna 3: Redes Sociais -->
+    <div>
+      <div class="footer-col-title">Redes Sociais</div>
+      <div class="footer-social" style="display: flex; gap: 16px;">
+        
+        <!-- Ícone Facebook -->
+        <a href="https://www.facebook.com/Barbeariahebreusoficial" target="_blank" class="social-link" style="width: 48px; height: 48px;">
+          <!-- Substitua o 'src' pelo nome exato do seu arquivo PNG do Facebook -->
+          <img src="./img_hebreus/icon_facebook.png" alt="Facebook" style="width: 24px; height: 24px; object-fit: contain;">
+        </a>
+        
+        <!-- Ícone Instagram -->
+        <a href="https://www.instagram.com/barbeariahebreus_/" target="_blank" class="social-link" style="width: 48px; height: 48px;">
+          <!-- Substitua o 'src' pelo nome exato do seu arquivo PNG do Instagram -->
+          <img src="./img_hebreus/icon_instagram.png" alt="Instagram" style="width: 24px; height: 24px; object-fit: contain;">
+        </a>
+
+      </div>
+    </div>
+
+<div class="footer-bottom" style="padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+    <p class="footer-copy">© 2026 Barbearia Hebreus — Todos os direitos reservados. Pinhais/PR.</p>
+    <p class="footer-copy">Desenvolvido com muito ☕ por GKS Dev.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // LÓGICA DE FILTRO INICIALIZANDO COM "MAIS POPULARES"
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll('.btn-filtro');
+    const serviceCards = document.querySelectorAll('.servico-card');
+    
+    // Função para aplicar o filtro
+    const applyFilter = (filter) => {
+      serviceCards.forEach(card => {
+        if (card.classList.contains(filter)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    };
+
+    // Aplica o filtro padrão (popular) ao carregar a página
+    applyFilter('popular');
+
+    // Eventos de clique nos botões
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        applyFilter(filter);
+      });
+    });
+  });
+</script>
+
+<a href="https://api.whatsapp.com/send?phone=5541992147974&text=Ola%2C%20gostaria%20de%20falar%20com%20a%20recepção!" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+</body>
+</html>
